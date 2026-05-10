@@ -1,9 +1,6 @@
 # mozuku-ts
 
-TypeScript / JavaScript の学習用リポジトリ。
-
-開発環境は Nix flake で提供しているので、誰がどの OS で clone しても
-同じツールチェインで動作します。
+もずますがTypeScriptを頑張って勉強する用のrepo
 
 ## セットアップ
 
