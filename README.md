@@ -52,24 +52,40 @@ devShell に入ると以下が `PATH` に揃います:
 
 ### Step 0: 学習用プロジェクトの初期化
 
-まだファイルは置かない。必要になったタイミングで下記のコマンドを叩いて
+まだファイルは置かない。必要になったタイミングで下記のコマンドを **1 つずつ** 実行して
 `package.json` / `tsconfig.json` を生成する。
 
-**Bun で始める場合 (推奨):**
+#### Bun で始める場合（推奨）
 
-```sh
-bun init
-```
+1. `package.json` と `tsconfig.json` を一括生成する
 
-**Node.js + npm で始める場合:**
+   ```sh
+   bun init
+   ```
 
-```sh
-npm init -y
-npx tsc --init
-```
+   （対話プロンプトはひとまず Enter で進めて OK）
 
-学習中はここで生成されるテンプレートで十分。
-本格的に運用するときに改めて設定を見直す。
+#### Node.js + npm で始める場合
+
+1. `package.json` を生成する
+
+   ```sh
+   npm init -y
+   ```
+
+2. TypeScript を `devDependencies` に追加する
+
+   ```sh
+   npm install --save-dev typescript
+   ```
+
+3. `tsconfig.json` を生成する
+
+   ```sh
+   npx tsc --init
+   ```
+
+学習中はここで生成されるテンプレートで十分。本格的に運用するときに改めて設定を見直す。
 
 ### Step 1: JavaScript の最初の一歩
 
