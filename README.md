@@ -87,11 +87,11 @@ devShell に入ると以下が PATH に揃います:
 学習中はここで生成されるテンプレートで十分。
 本格的に運用するときに改めて設定を見直す。
 
-### Step 1: JavaScript の最初の一歩
+### Step 1: JavaScript
 
 <https://sorafujitani.me/blog/js-first-step/>
 
-### Step 2: TypeScript の最初の一歩
+### Step 2
 
 <https://sorafujitani.me/blog/ts-first-step/>
 
