@@ -31,8 +31,8 @@ const listTask = () => {
 
 // タスクを完了
 // 入力:Array 出力: 完了したタスクの表示
-const completeTask = (id) => {
-  const targetTask = tasks.find((t) => t.id == id)
+const completeTask = (taskId) => {
+  const targetTask = tasks.find((t) => t.id === taskId)
   targetTask.isComplete = true
 
   console.log("タスクを完了したにょ")
