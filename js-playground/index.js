@@ -14,14 +14,18 @@ id: ${incrementableId}
 `)
 }
 
+const printTask = (task) => {
+  const mark = task.isComplete ? "✔" : " "
+  console.log(`[${mark}]: ${task.title}`)
+}
+
 // タスクを表示
 // 入力: Array 出力: Arrayを表示
 const listTask = () => {
   console.log(`<タスクリスト>
 `)
   for (const task of tasks) {
-    const mark = task.isComplete ? "✔" : " "
-    console.log(`[${mark}]: ${task.title}`)
+    printTask(task)
   }
 }
 
@@ -31,10 +35,8 @@ const completeTask = (id) => {
   const targetTask = tasks.find((t) => t.id == id)
   targetTask.isComplete = true
 
-  const mark = targetTask.isComplete ? "✔" : " "
   console.log("タスクを完了したにょ")
-  console.log(`[${mark}]: ${targetTask.title}`)
-
+  printTask(targetTask)
 }
 
 // データ構造
